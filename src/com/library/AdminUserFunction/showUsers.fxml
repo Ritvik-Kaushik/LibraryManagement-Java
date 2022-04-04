@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<AnchorPane fx:id="userViewAnchor" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #68abed;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.Controller">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutX="138.0" layoutY="24.0" prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #003d6b;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#allUsers" style="-fx-background-color: green;" stylesheets="@../css/style.css" text="All Users" />
+            <Region prefHeight="48.0" prefWidth="27.0" />
+            <TextField fx:id="searchUser" alignment="CENTER" promptText="Enter student Id" />
+            <Region prefHeight="48.0" prefWidth="59.0" />
+            <Button mnemonicParsing="false" onAction="#searchUser" style="-fx-background-color: green;" stylesheets="@../css/style.css" text="Search" />
+            <Region prefHeight="48.0" prefWidth="44.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

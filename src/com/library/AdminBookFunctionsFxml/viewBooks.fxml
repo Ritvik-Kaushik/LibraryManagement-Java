@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+
+<AnchorPane fx:id="viewBookpane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #68abed;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.Controller">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutX="94.0" prefHeight="49.0" prefWidth="600.0" style="-fx-background-color: #003d6b;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#allBooks" style="-fx-background-color: green;" stylesheets="@../css/style.css" text="All Books" />
+            <Region prefHeight="49.0" prefWidth="47.0" />
+            <TextField fx:id="searchBook" alignment="CENTER" promptText="Enter Id" styleClass="textBox" stylesheets="@../css/style.css" />
+            <Region prefHeight="49.0" prefWidth="28.0" />
+            <Button mnemonicParsing="false" onAction="#searchBook" style="-fx-background-color: green;" stylesheets="@../css/style.css" text="Search" />
+            <Region prefHeight="49.0" prefWidth="26.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

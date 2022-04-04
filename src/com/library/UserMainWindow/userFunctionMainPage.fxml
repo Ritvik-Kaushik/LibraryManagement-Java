@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminPageAnchor" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.Controller">
+    <children>
+        <VBox alignment="TOP_CENTER" fillWidth="false" layoutX="46.0" layoutY="85.0" prefHeight="466.0" prefWidth="242.0" style="-fx-background-color: #003d6b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="112.0">
+                    <children>
+                        <ImageView fitHeight="66.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/man.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets top="10.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label alignment="BASELINE_LEFT" contentDisplay="BOTTOM" text="User" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Region prefHeight="43.0" prefWidth="112.0" />
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#logoutAdmin" prefHeight="34.0" prefWidth="253.0" styleClass="text" stylesheets="@../css/style.css" text="          Home" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/home.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Button>
+                <Region prefHeight="20.0" prefWidth="112.0" />
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#issueBookButton" prefHeight="34.0" prefWidth="285.0" text="      IssueBook" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/book.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Region prefHeight="20.0" prefWidth="112.0" />
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#returnBookPage" prefHeight="25.0" prefWidth="241.0" text="   ReturnBook" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/user%20(1).png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Region prefHeight="20.0" prefWidth="112.0" />
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#payFinePage" prefHeight="34.0" prefWidth="346.0" styleClass="text" stylesheets="@../css/style.css" text="      Pay Fine" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/statistics.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Region prefHeight="20.0" prefWidth="112.0" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#defulaterAction" prefHeight="34.0" prefWidth="346.0" styleClass="text" stylesheets="@../css/style.css" text="      Defaulter" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/student.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+                <Region prefHeight="20.0" prefWidth="112.0" />
+            </children>
+        </VBox>
+      <AnchorPane fx:id="userRootAnchor" layoutX="227.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="-7.0" prefHeight="466.0" prefWidth="626.0" style="-fx-background-color: #68abed;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                      <HBox alignment="CENTER">
+                          <children>
+                              <Region prefHeight="127.0" prefWidth="81.0" />
+                              <ImageView fitHeight="137.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../images/logo.png" />
+                                  </image>
+                              </ImageView>
+                              <Label prefHeight="112.0" prefWidth="469.0" styleClass="text" text="Central Library Management" wrapText="true">
+                                  <font>
+                                      <Font size="34.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </HBox>
+                  <ImageView fitHeight="293.0" fitWidth="287.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/library.png" />
+                     </image>
+                  </ImageView>
+                  </children>
+              </VBox>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

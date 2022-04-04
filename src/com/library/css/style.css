@@ -1,0 +1,36 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+   
+}
+.body{
+	-fx-background-image:url("background.jpg"); 
+	
+}
+.textBox{
+	-fx-background-radius:10px;
+
+}
+.button{
+	-fx-background-radius:12px;
+	-fx-border-radius:12px;
+	-fx-cursor:hand ;
+	-fx-background-color:transparent;
+	-fx-weight:bold;
+
+
+	
+}
+.button:hover{
+	-fx-border-color:#0061c9;
+	-fx-color:blue;
+    -fx-translate-x:5px;
+
+}
+.text{
+-fx-wrap:wrap;
+-fx-font-weight:bold;
+-fx-font-family:serif;
+
+
+}

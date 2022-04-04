@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="userLoginAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="769.0" style="-fx-background-color: #0084b0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.UserLogin">
+   <children>
+      <VBox alignment="CENTER" layoutX="329.0" layoutY="28.0" prefHeight="372.0" prefWidth="306.0" style="-fx-background-color: #0084b0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+         <children>
+            <Label styleClass="text" stylesheets="@../css/style.css" text="User Login">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <Region prefHeight="40.0" prefWidth="475.0" />
+            <Label prefHeight="76.0" prefWidth="43.0">
+               <font>
+                  <Font size="57.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="70.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/lock.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="80.0" top="-100.0" />
+               </VBox.margin>
+            </ImageView>
+            <Region prefHeight="21.0" prefWidth="475.0" />
+            <HBox alignment="CENTER" prefHeight="33.0" prefWidth="306.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Label>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="4.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="userId" alignment="CENTER" prefHeight="25.0" prefWidth="268.0" promptText="userId" styleClass="textBox" stylesheets="@../css/style.css" />
+               </children>
+            </HBox>
+            <Region prefHeight="24.0" prefWidth="475.0" />
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="306.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView fitHeight="22.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/key.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="4.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="userPassword" alignment="CENTER" prefHeight="25.0" prefWidth="268.0" promptText="password" styleClass="textBox" stylesheets="@../css/style.css" />
+               </children>
+            </HBox>
+            <Region prefHeight="17.0" prefWidth="475.0" />
+            <Button mnemonicParsing="false" onAction="#buttonLogin" stylesheets="@../css/style.css" text="Login">
+               <VBox.margin>
+                  <Insets left="90.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="-2.0" layoutY="14.0" prefHeight="400.0" prefWidth="296.0" style="-fx-background-color: #0099f2;" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="284.0" fitWidth="266.0" layoutX="14.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/library.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="37.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Central Library">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="296.0" layoutY="2.0" mnemonicParsing="false" onAction="#backUserPageToMain" stylesheets="@../css/style.css" text="Back" />
+   </children>
+</AnchorPane>
